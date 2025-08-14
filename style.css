@@ -40,7 +40,6 @@ body {
     margin: 2px;
     background-color:rgb(27, 25, 189);
     color: #fff;
-    -webkit-text-stroke: 1px black;
     font-weight: bolder;
 }
 
@@ -50,4 +49,5 @@ body {
 
 .addsub {
     font-size:1em;
+
 }
