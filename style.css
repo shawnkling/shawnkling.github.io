@@ -22,8 +22,7 @@ body {
 
 .add-button, .sub-button {
     font-size: 20px;
-    width: 40px;
-    height: 40px;
+    width: 30px;
 }
 
 .player-container {
@@ -49,12 +48,9 @@ body {
 }
 
 .score {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .addsub {
     font-size:1rem;
 }
-
-
-
