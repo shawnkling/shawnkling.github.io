@@ -6,6 +6,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center bottom;
+    background-size: 100%;
 }
 
 @font-face {
@@ -54,5 +55,6 @@ body {
 .addsub {
     font-size:1rem;
 }
+
 
 
