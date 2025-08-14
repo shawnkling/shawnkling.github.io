@@ -16,9 +16,9 @@ body {
 }
 
 .add-button, .sub-button {
-    font-size: 40px;
-    width: 60px;
-    height: 60px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
 }
 
 .player-container {
