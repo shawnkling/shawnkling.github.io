@@ -2,7 +2,7 @@ body {
     text-align: center;
     font-size: 1.5rem;
     background-color: #652d92;
-    background-image: url('bg.jpg');
+    background-image: url('bg2.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center bottom;
@@ -54,3 +54,4 @@ body {
 .addsub {
     font-size:1rem;
 }
+
