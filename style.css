@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+    font-size: 2em;
+    background-color: blue;
+}
+
+@font-face {
+    font-family: 'gyparody';
+    src: url('gyparody.ttf') format('truetype');
+}
+
+#jep {
+    color: #fff;
+    font-size: 3em;
+    font-family: gyparody;
+}
+
+.add-button, .sub-button {
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+}
+
+.player-container {
+    border: 1px solid black;
+    display: flex;
+    width: 100%;
+    background-color: blue;
+}
+
+.player {
+    font-family: 'Impact';
+    text-transform: uppercase;
+    border: 1px solid red;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 2px;
+    background-color:rgb(27, 25, 189);
+    color: #fff;
+    -webkit-text-stroke: 1px black;
+    font-weight: bolder;
+}
+
+.score {
+    font-size: 2em;
+}
+
+.addsub {
+    font-size:1em;
+}

@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>WONKARDY!!!!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#addplayer").click(function() {
+                var inputValue = $('#newplayer').val();
+                var currentPlayer = $('#playercount').val();
+                $(".player-container").append("<div class='player'>"+inputValue+
+                    "<div class='score' id = 'score"+currentPlayer+
+                    "'>0</div><input type='hidden' id='hscore"+currentPlayer+"' value='0'><div class='addsub'><button class='add-button' id='"+currentPlayer+
+                    "'>+</button> &nbsp; &nbsp; <button class='sub-button' id='"+currentPlayer+
+                    "'>-</button></div></div>");
+                $('#newplayer').val('');
+                $('#newplayer').focus();
+                currentPlayer++;
+                $('#playercount').val(currentPlayer);
+            });
+
+            $(document).on("click",".add-button", function () {
+                var clickedBtnID = $(this).attr('id');
+                var oldscore = "#score"+clickedBtnID;
+                var oldscoreValue = $(oldscore).html();
+                oldscoreValue++;
+                $(oldscore).html(oldscoreValue);
+            });
+
+            $(document).on("click",".sub-button", function () {
+                var clickedBtnID = $(this).attr('id');
+                var oldscore = "#score"+clickedBtnID;
+                var oldscoreValue = $(oldscore).html();
+                oldscoreValue--;
+                $(oldscore).html(oldscoreValue);
+            });
+            
+            $("#newplayer").keyup(function(event) {
+                if (event.keyCode === 13) {
+                    $("#addplayer").click();
+                }
+            });
+
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="jep">WONKARDY!</div>
+
+<div class="player-container">
+
+</div>
+<input type = "hidden" id = "playercount" value="1">
+<input name = "newplayer" id="newplayer" type="text"> <button type="submit" name="addplayer" id="addplayer">Add Player</button>
+
+</body>
+</html>
