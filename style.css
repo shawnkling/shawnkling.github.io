@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5rem;
     background-color: blue;
 }
 
@@ -11,7 +11,7 @@ body {
 
 #jep {
     color: #fff;
-    font-size: 3em;
+    font-size: 2rem;
     font-family: gyparody;
 }
 
@@ -36,7 +36,7 @@ body {
     flex: 1;
     flex-direction: column;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2rem;
     margin: 2px;
     background-color:rgb(27, 25, 189);
     color: #fff;
@@ -44,9 +44,9 @@ body {
 }
 
 .score {
-    font-size: 2em;
+    font-size: 1.5rem;
 }
 
 .addsub {
-    font-size:1em;
+    font-size:1rem;
 }
