@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 3rem;
     background-color: #652d92;
     background-image: url('bg2.jpg');
     background-repeat: no-repeat;
@@ -12,6 +12,10 @@ body {
 @font-face {
     font-family: 'gyparody';
     src: url('gyparody.ttf') format('truetype');
+}
+
+button:focus {
+    outline: none;
 }
 
 #jep {
@@ -34,7 +38,6 @@ body {
 }
 
 .player-container {
-    border: 1px solid black;
     display: flex;
     width: 100%;
     background-color: blue;
