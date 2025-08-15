@@ -14,8 +14,13 @@ body {
     src: url('gyparody.ttf') format('truetype');
 }
 
+button:active:focus {
+    outline: none;
+    box-shadow: none;
+}
 button:focus {
     outline: none;
+    box-shadow: none;
 }
 
 #jep {
@@ -39,10 +44,20 @@ button:focus {
 
 .add-button:focus {
     outline: none;
+    box-shadow: none;
+}
+.add-button:active:focus{
+    outline: none;
+    box-shadow: none;
 }
 
 .sub-button:focus {
     outline: none;
+    box-shadow: none;
+}
+.sub-button:active:focus{
+    outline: none;
+    box-shadow: none;
 }
 
 .player-container {
@@ -85,4 +100,5 @@ button:focus {
 #newplayer {
     width: 60px;
 }
+
 
