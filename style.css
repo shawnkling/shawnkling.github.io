@@ -37,6 +37,14 @@ button:focus {
  cursor: pointer
 }
 
+.add-button:focus {
+    outline: none;
+}
+
+.sub-button:focus {
+    outline: none;
+}
+
 .player-container {
     display: flex;
     width: 100%;
