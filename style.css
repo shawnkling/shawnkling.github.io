@@ -71,3 +71,7 @@ button:focus {
     top: 0px;
     right: 0px;
 }
+
+#newplayer {
+    width: 60px;
+}
