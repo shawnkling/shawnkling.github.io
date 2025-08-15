@@ -50,7 +50,7 @@ button:focus {
     width: 100%;
     background-color: blue;
     position: fixed;
-    bottom: 2em;
+    bottom: 1em;
 }
 
 .player {
@@ -85,3 +85,4 @@ button:focus {
 #newplayer {
     width: 60px;
 }
+
