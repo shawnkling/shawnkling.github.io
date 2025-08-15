@@ -17,10 +17,12 @@ body {
 button:active:focus {
     outline: none;
     box-shadow: none;
+    user-select: none;
 }
 button:focus {
     outline: none;
     box-shadow: none;
+    user-select: none;
 }
 
 #jep {
@@ -39,25 +41,32 @@ button:focus {
  font-size: 1.5rem; 
  border-radius: .6rem; 
  filter: drop-shadow(2px 0 1px rgba(100, 100, 100, .75));
- cursor: pointer
+ cursor: pointer;
+ outline: none;
+ box-shadow: none;
+ user-select: none;
 }
 
 .add-button:focus {
     outline: none;
     box-shadow: none;
+    user-select: none;
 }
 .add-button:active:focus{
     outline: none;
     box-shadow: none;
+    user-select: none;
 }
 
 .sub-button:focus {
     outline: none;
     box-shadow: none;
+    user-select: none;
 }
 .sub-button:active:focus{
     outline: none;
     box-shadow: none;
+    user-select: none;
 }
 
 .player-container {
@@ -100,5 +109,6 @@ button:focus {
 #newplayer {
     width: 60px;
 }
+
 
 
