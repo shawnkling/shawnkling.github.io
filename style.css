@@ -1,3 +1,7 @@
+html {
+    -webkit-tap-highlight-color:transparent;    
+}
+
 body {
     text-align: center;
     font-size: 3rem;
@@ -109,6 +113,7 @@ button:focus {
 #newplayer {
     width: 60px;
 }
+
 
 
 
