@@ -20,7 +20,7 @@ button:focus {
 
 #jep {
     color: #fff;
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-family: gyparody;
 }
 
@@ -41,6 +41,8 @@ button:focus {
     display: flex;
     width: 100%;
     background-color: blue;
+    position: fixed;
+    bottom: 0px;
 }
 
 .player {
