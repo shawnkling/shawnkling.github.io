@@ -72,6 +72,7 @@ button:focus {
 }
 
 .playername {
+    padding-top: 20px;
     height: 2em;
 }
 
@@ -97,4 +98,3 @@ button:focus {
 #newplayer {
     width: 60px;
 }
-
