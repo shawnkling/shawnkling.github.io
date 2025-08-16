@@ -4,14 +4,18 @@
     <title>WONKARDY!!!!</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
+        var fontFamilies = ['Covered By Your Grace, cursive', 'Indie Flower, cursive', 'Nerko One, cursive', 'Gochi Hand, cursive', 'Schoolbell, cursive', 'Qwigley, cursive', 'Waiting for the Sunrise, cursive', 'Lacquer, cursive', 'Hachi Maru Pop, cursive'];
 
         $(document).ready(function() {
             $('#newplayer').focus();
             $("#addplayer").click(function() {
+                var randomIndex = Math.floor(Math.random() * fontFamilies.length);
+                var font = fontFamilies[randomIndex];
+                fontFamilies.splice(randomIndex, 1);
                 var inputValue = $('#newplayer').val();
                 var currentPlayer = $('#playercount').val();
 
-                $(".player-container").append("<div class='player'><div class='score' id = 'score"+currentPlayer+"'>0</div><input type='hidden' id='hscore"+currentPlayer+"' value='0'>"+inputValue+
+                $(".player-container").append("<div class='player' style='font-family: "+font+"'><div class='score' id = 'score"+currentPlayer+"'>0</div><input type='hidden' id='hscore"+currentPlayer+"' value='0'>"+inputValue+
                     "<div class='addsub'><button class='add-button' id='"+currentPlayer+
                     "'>+</button> &nbsp; &nbsp; <button class='sub-button' id='"+currentPlayer+
                     "'>-</button></div></div>");
@@ -56,7 +60,7 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Gochi+Hand&family=Hachi+Maru+Pop&family=Indie+Flower&family=Lacquer&family=Nerko+One&family=Qwigley&family=Schoolbell&family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
