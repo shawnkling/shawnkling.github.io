@@ -24,7 +24,7 @@
                 var clickedBtnID = $(this).attr('id');
                 var oldscore = "#score"+clickedBtnID;
                 var oldscoreValue = $(oldscore).html();
-                oldscoreValue++;
+                oldscoreValue=parseInt(oldscoreValue)+100;
                 $(oldscore).html(oldscoreValue);
             });
 
@@ -32,7 +32,7 @@
                 var clickedBtnID = $(this).attr('id');
                 var oldscore = "#score"+clickedBtnID;
                 var oldscoreValue = $(oldscore).html();
-                oldscoreValue--;
+                oldscoreValue-=100;
                 $(oldscore).html(oldscoreValue);
             });
             
