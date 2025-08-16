@@ -40,15 +40,12 @@ button:focus {
  background-color: #fff; 
  font-weight: bold;
  color: #000; 
- padding: 8px 0; 
- width: 2.7rem; 
+ padding: 4px 0; 
+ width: 2.5rem; 
  font-size: 1.3rem; 
  border-radius: .6rem; 
  filter: drop-shadow(2px 0 1px rgba(100, 100, 100, .75));
  cursor: pointer;
- outline: none;
- box-shadow: none;
- user-select: none;
 }
 
 .player-container {
