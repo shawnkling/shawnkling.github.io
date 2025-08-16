@@ -53,6 +53,7 @@ button:focus {
     width: 100%;
     position: fixed;
     bottom: 1em;
+    opacity: .9;
 }
 
 .player {
