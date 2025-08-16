@@ -4,23 +4,18 @@
     <title>WONKARDY!!!!</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
+
         $(document).ready(function() {
             $('#newplayer').focus();
             $("#addplayer").click(function() {
                 var inputValue = $('#newplayer').val();
                 var currentPlayer = $('#playercount').val();
 
-                $(".player-container").append("<div class='player'><div class='score' id = 'score"+currentPlayer+"'>0</div><input type='hidden' id='hscore"+currentPlayer+"' value='0'>"+inputValue+"<div class='addsub'><button class='add-button' id='"+currentPlayer+
+                $(".player-container").append("<div class='player'><div class='score' id = 'score"+currentPlayer+"'>0</div><input type='hidden' id='hscore"+currentPlayer+"' value='0'>"+inputValue+
+                    "<div class='addsub'><button class='add-button' id='"+currentPlayer+
                     "'>+</button> &nbsp; &nbsp; <button class='sub-button' id='"+currentPlayer+
                     "'>-</button></div></div>");
 
-                /*
-                $(".player-container").append("<div class='player'>"+inputValue+
-                    "<div class='score' id = 'score"+currentPlayer+
-                    "'>0</div><input type='hidden' id='hscore"+currentPlayer+"' value='0'><div class='addsub'><button class='add-button' id='"+currentPlayer+
-                    "'>+</button> &nbsp; &nbsp; <button class='sub-button' id='"+currentPlayer+
-                    "'>-</button></div></div>");
-                    */
                 $('#newplayer').val('');
                 $('#newplayer').focus();
                 currentPlayer++;
@@ -32,14 +27,22 @@
                 var oldscore = "#score"+clickedBtnID;
                 var oldscoreValue = $(oldscore).html();
                 oldscoreValue=parseInt(oldscoreValue)+100;
+                if(oldscoreValue<0)
+                    $(oldscore).css('color', 'red');
+                else
+                    $(oldscore).css('color', 'white');             
                 $(oldscore).html(oldscoreValue);
             });
-
+            
             $(document).on("click",".sub-button", function () {
                 var clickedBtnID = $(this).attr('id');
                 var oldscore = "#score"+clickedBtnID;
                 var oldscoreValue = $(oldscore).html();
                 oldscoreValue-=100;
+                if(oldscoreValue<0)
+                    $(oldscore).css('color', 'red');
+                else
+                    $(oldscore).css('color', 'white');    
                 $(oldscore).html(oldscoreValue);
             });
             
