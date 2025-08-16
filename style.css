@@ -57,7 +57,7 @@ button:focus {
 }
 
 .player {
-    font-family: "Indie Flower", cursive;
+    /*font-family: "Indie Flower", cursive;*/
     text-transform: uppercase;
     border: 2px solid #000;
     border-radius: 10px;
