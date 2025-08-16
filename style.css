@@ -86,13 +86,13 @@ button:focus {
     text-transform: uppercase;
     border: 2px solid #000;
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px 0px 10px 0px;
     display: flex;
     flex: 1;
     flex-direction: column;
     text-align: center;
-    font-size: 2rem;
-    margin: 2px;
+    font-size: 3rem;
+    margin: 5px;
     background-color:rgb(27, 25, 189);
     color: #fff;
     font-weight: bolder;
@@ -101,10 +101,13 @@ button:focus {
 .score {
     font-size: 3.5rem;
     font-family: 'Impact';
+    border-bottom: 5px solid black;
 }
 
 .addsub {
+    border-top: 5px solid black;
     margin-top: 10px;
+    padding-top: 5px;
     font-size:1rem;
 }
 
@@ -116,4 +119,8 @@ button:focus {
 
 #newplayer {
     width: 60px;
+}
+
+.negative-value {
+  color: red;
 }
