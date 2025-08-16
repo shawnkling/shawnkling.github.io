@@ -64,7 +64,7 @@ button:focus {
     flex: 1;
     flex-direction: column;
     text-align: center;
-    font-size: 2.7rem;
+    font-size: 2.6rem;
     margin: 5px;
     background-color:rgb(27, 25, 189);
     color: #fff;
@@ -97,3 +97,4 @@ button:focus {
 #newplayer {
     width: 60px;
 }
+
