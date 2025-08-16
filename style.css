@@ -76,7 +76,7 @@ button:focus {
 .player-container {
     display: flex;
     width: 100%;
-    background-color: blue;
+    /*background-color: blue;*/
     position: fixed;
     bottom: 1em;
 }
@@ -84,7 +84,9 @@ button:focus {
 .player {
     font-family: 'Impact';
     text-transform: uppercase;
-    border: 1px solid red;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px;
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -113,7 +115,5 @@ button:focus {
 #newplayer {
     width: 60px;
 }
-
-
 
 
