@@ -50,29 +50,7 @@ button:focus {
  box-shadow: none;
  user-select: none;
 }
-/*
-.add-button:focus {
-    outline: none;
-    box-shadow: none;
-    user-select: none;
-}
-.add-button:active:focus{
-    outline: none;
-    box-shadow: none;
-    user-select: none;
-}
 
-.sub-button:focus {
-    outline: none;
-    box-shadow: none;
-    user-select: none;
-}
-.sub-button:active:focus{
-    outline: none;
-    box-shadow: none;
-    user-select: none;
-}
-*/
 .player-container {
     display: flex;
     width: 100%;
@@ -82,7 +60,7 @@ button:focus {
 }
 
 .player {
-    font-family: "Permanent Marker", cursive;
+    font-family: "Indie Flower", cursive;
     text-transform: uppercase;
     border: 2px solid #000;
     border-radius: 10px;
