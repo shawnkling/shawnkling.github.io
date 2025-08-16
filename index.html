@@ -9,11 +9,18 @@
             $("#addplayer").click(function() {
                 var inputValue = $('#newplayer').val();
                 var currentPlayer = $('#playercount').val();
+
+                $(".player-container").append("<div class='player'><div class='score' id = 'score"+currentPlayer+"'>0</div><input type='hidden' id='hscore"+currentPlayer+"' value='0'>"+inputValue+"<div class='addsub'><button class='add-button' id='"+currentPlayer+
+                    "'>+</button> &nbsp; &nbsp; <button class='sub-button' id='"+currentPlayer+
+                    "'>-</button></div></div>");
+
+                /*
                 $(".player-container").append("<div class='player'>"+inputValue+
                     "<div class='score' id = 'score"+currentPlayer+
                     "'>0</div><input type='hidden' id='hscore"+currentPlayer+"' value='0'><div class='addsub'><button class='add-button' id='"+currentPlayer+
                     "'>+</button> &nbsp; &nbsp; <button class='sub-button' id='"+currentPlayer+
                     "'>-</button></div></div>");
+                    */
                 $('#newplayer').val('');
                 $('#newplayer').focus();
                 currentPlayer++;
@@ -44,6 +51,9 @@
 
         });
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Over+the+Rainbow&family=Permanent+Marker&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
 </head>
 
