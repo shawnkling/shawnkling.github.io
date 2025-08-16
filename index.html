@@ -15,8 +15,8 @@
                 var inputValue = $('#newplayer').val();
                 var currentPlayer = $('#playercount').val();
 
-                $(".player-container").append("<div class='player' style='font-family: "+font+"'><div class='score' id = 'score"+currentPlayer+"'>0</div><input type='hidden' id='hscore"+currentPlayer+"' value='0'>"+inputValue+
-                    "<div class='addsub'><button class='add-button' id='"+currentPlayer+
+                $(".player-container").append("<div class='player' style='font-family: "+font+"'><div class='score' id = 'score"+currentPlayer+"'>0</div><div class='playername'><input type='hidden' id='hscore"+currentPlayer+"' value='0'>"+inputValue+
+                    "</div><div class='addsub'><button class='add-button' id='"+currentPlayer+
                     "'>+</button> &nbsp; &nbsp; <button class='sub-button' id='"+currentPlayer+
                     "'>-</button></div></div>");
 
