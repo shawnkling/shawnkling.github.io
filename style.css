@@ -81,7 +81,7 @@ button:focus {
     flex-direction: column;
     flex-shrink: 2;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 5px;
     background-color:rgb(27, 25, 189);
     color: #fff;
@@ -93,7 +93,7 @@ button:focus {
 }
 
 .score {
-    font-size: 2.6rem;
+    font-size: 3rem;
     font-family: 'Impact';
     border-bottom: 5px solid black;
     text-shadow: 1px 1px #000;
