@@ -107,15 +107,19 @@ button:focus {
     left: 70px;
 }
 
-#newplayer {
-    width: 60px;
-    border: 1px;
-    border-radius: 5px;
-}
-
 #addplayer {
     border: 1px;
     border-radius: 5px;
     padding: 5px;
     margin-right: 20px;
+    background: #FEF200;
+    cursor: pointer;
+}
+
+ input[type="text"] {
+    width: 40px;
+    border: 1px;
+    border-radius: 5px;
+    outline: 0;    
+    padding: 5px;
 }
