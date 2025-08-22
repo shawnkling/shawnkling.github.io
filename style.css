@@ -5,6 +5,7 @@ html {
 body {
     text-align: center;
     font-size: 2rem;
+	background-color: #FEF200;
     background-image: url('matilda-bg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -113,5 +114,6 @@ button:focus {
 #newplayer {
     width: 60px;
 }
+
 
 
