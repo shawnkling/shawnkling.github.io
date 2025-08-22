@@ -57,6 +57,10 @@
                     $(oldscore).css('color', 'white');    
                 $(oldscore).html(oldscoreValue);
             });
+
+            $(document).on("click",".refresh", function () {
+                location.reload();
+            });            
             
             $("#newplayer").keyup(function(event) {
                 if (event.keyCode === 13) {
@@ -78,6 +82,7 @@
 <div class="player-container">
 
 </div>
+<div class="refresh"></div>
 <input type = "hidden" id = "playercount" value="1">
 <div class = "bottom"><input name = "newplayer" id="newplayer" type="text" maxlength="5"> <button type="submit" name="addplayer" id="addplayer">Add Player</button></div>
 
