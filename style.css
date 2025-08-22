@@ -6,7 +6,7 @@ body {
     text-align: center;
     font-size: 3rem;
     background-color: #652d92;
-    background-image: url('bg2.jpg');
+    background-image: url('matilda-bg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center bottom;
@@ -25,14 +25,15 @@ button:active:focus {
 }
 button:focus {
     outline: none;
-    box-shadow: none;
+    box-shadow: none; 
     user-select: none;
 }
 
 #jep {
-    color: #fff;
+    color: #208607;
     font-size: 5rem;
     font-family: gyparody;
+    text-shadow: 3px 3px #000;
 }
 
 .add-button, .sub-button {
@@ -50,20 +51,21 @@ button:focus {
 
 .player-container {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    position: fixed;
     bottom: 1em;
     opacity: .9;
 }
 
 .player {
+    width: 15%;
     text-transform: uppercase;
     border: 2px solid #000;
     border-radius: 10px;
     padding: 10px 0px 10px 0px;
     display: flex;
-    flex: 1;
     flex-direction: column;
+    flex-shrink: 2;
     text-align: center;
     font-size: 2.6rem;
     margin: 5px;
