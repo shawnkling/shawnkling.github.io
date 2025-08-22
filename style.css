@@ -91,13 +91,20 @@ button:focus {
 }
 
 .refresh {
-    width: 128px;
-    height: 128px;
+    width: 64px;
+    height: 64px;
     position: fixed;
     top: 0px;
     left: 0px;
     background-image: url('refresh.png');
+    background-size: 100%;
     cursor: pointer;
+}
+
+.verify {
+    position: fixed;
+    top: 35px;
+    left: 70px;
 }
 
 #newplayer {
