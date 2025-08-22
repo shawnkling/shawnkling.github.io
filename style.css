@@ -9,8 +9,8 @@ body {
     background-image: url('matilda-bg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
-    background-size: contain;
+    background-position: center bottom;
+    background-size: 80%;
     margin: 0;
 }
 
@@ -114,3 +114,4 @@ button:focus {
 #newplayer {
     width: 60px;
 }
+
