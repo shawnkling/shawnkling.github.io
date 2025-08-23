@@ -108,6 +108,12 @@ button:focus {
     left: 70px;
 }
 
+#vtext {
+    font-family: schoolbell;
+    font-size: .7em;
+    visibility: hidden;
+}
+
 #addplayer {
     border: 1px;
     border-radius: 5px;
