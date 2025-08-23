@@ -75,6 +75,7 @@ button:focus {
 
 .playername {
     padding: 10px;
+    transform: skew(0deg, -10deg);
 }
 
 .score {
