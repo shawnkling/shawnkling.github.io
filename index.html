@@ -4,7 +4,7 @@
     <title>MATILDARDY!!!!</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
-        var fontFamilies = ['Covered By Your Grace, cursive', 'Indie Flower, cursive', 'Nerko One, cursive', 'Gochi Hand, cursive', 'Schoolbell, cursive', 'Qwigley, cursive', 'Waiting for the Sunrise, cursive', 'Lacquer, cursive', 'Hachi Maru Pop, cursive'];
+        var fontFamilies = ['Montez, cursive', 'Playwrite AT, cursive', 'Bonbon, cursive', 'Covered By Your Grace, cursive', 'Indie Flower, cursive', 'Nerko One, cursive', 'Gochi Hand, cursive', 'Schoolbell, cursive', 'Qwigley, cursive', 'Waiting for the Sunrise, cursive', 'Lacquer, cursive', 'Hachi Maru Pop, cursive'];
 
         $(document).ready(function() {
             $('#newplayer').focus();
@@ -15,16 +15,8 @@
                 var inputValue = $('#newplayer').val();
                 var currentPlayer = $('#playercount').val();
 
-                /*
-                $(".player-container").append("<div class='player' style='font-family: "+font+"'><div class='score' id = 'score"+currentPlayer+"'>0</div><div class='playername'><input type='hidden' id='hscore"+currentPlayer+"' value='0'>"+inputValue+
-                    "</div><div class='addsub'><button class='add-button' id='"+currentPlayer+
-                    "'>+</button> &nbsp; &nbsp; <button class='sub-button' id='"+currentPlayer+
-                    "'>-</button></div></div>");
-                */
-
-
                 $(".player-container").append("<div class='player' style='font-family: "+font+"'><button class='add-button' id='"+currentPlayer+"'><div class='score' id = 'score"+currentPlayer+
-                    "'>0</div></button><button class='sub-button' id='"+currentPlayer+"'><div class='playername'><input type='hidden' id='hscore"+currentPlayer+"' value='0'>"+inputValue+
+                    "'>0</div></button><button class='sub-button' id='"+currentPlayer+"'><div class='playername' style='transform:skew("+getSkew()+"deg,"+getSkew()+"deg);'><input type='hidden' id='hscore"+currentPlayer+"' value='0'>"+inputValue+
                     "</div></button><div class='addsub'>");
 
 
@@ -72,11 +64,19 @@
                 }
             });
 
+        function getSkew(min, max) {
+            min = Math.ceil(-15);
+            max = Math.floor(15);
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
         });
+
+        
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Gochi+Hand&family=Hachi+Maru+Pop&family=Indie+Flower&family=Lacquer&family=Nerko+One&family=Qwigley&family=Schoolbell&family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montez&family=Playwrite+AT&family=Bonbon&family=Covered+By+Your+Grace&family=Gochi+Hand&family=Hachi+Maru+Pop&family=Indie+Flower&family=Lacquer&family=Nerko+One&family=Qwigley&family=Schoolbell&family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
