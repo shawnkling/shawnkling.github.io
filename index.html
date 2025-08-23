@@ -51,8 +51,8 @@
             });
 
             $(document).on("click",".refresh", function () {
-                if(document.getElementById('verify').checked) {
-                    $("#verify").prop("checked", false);
+                if(document.getElementById('vbox').checked) {
+                    $("#vbox").prop("checked", false);
                     location.reload();
                 }
                 else {
@@ -60,8 +60,8 @@
                 }
             });
             
-            $(document).on("click","#verify", function () {
-                if(document.getElementById('verify').checked) {
+            $(document).on("click","#vbox", function () {
+                if(document.getElementById('vbox').checked) {
                     $("#vtext").css("visibility", "hidden");
                 }
                 else {
@@ -97,7 +97,7 @@
 <div class="player-container">
 
 </div>
-<span class="verify"><input type="checkbox" id="verify"><span id="vtext">check box before refreshing</span></span>
+<span id="verify"><input type="checkbox" id="vbox"><span id="vtext">check box before refreshing</span></span>
 <div class="refresh"></div>
 <input type = "hidden" id = "playercount" value="1">
 <div class = "bottom"><input name = "newplayer" id="newplayer" type="text" maxlength="5"> <button type="submit" name="addplayer" id="addplayer">Add Player</button></div>
