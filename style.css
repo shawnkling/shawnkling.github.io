@@ -71,7 +71,7 @@ button:focus {
     background-color:rgb(27, 25, 189);
     color: #fff;
     font-weight: bolder;
-	height: 3.5em;
+    height: 3.5em;
 }
 
 .playername {
@@ -103,15 +103,15 @@ button:focus {
     cursor: pointer;
 }
 
-.verify {
+#verify {
     position: fixed;
-    top: 20px;
-    left: 70px;
+    top: 10px;
+    left: 60px;
 }
 
 #vtext {
     font-family: schoolbell;
-    font-size: .7em;
+    font-size: .4em;
     visibility: hidden;
 }
 
@@ -131,5 +131,3 @@ button:focus {
     outline: 0;    
     padding: 5px;
 }
-
-
