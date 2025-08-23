@@ -71,7 +71,7 @@ button:focus {
     background-color:rgb(27, 25, 189);
     color: #fff;
     font-weight: bolder;
-	height: 3em;
+	height: 3.5em;
 }
 
 .playername {
@@ -131,4 +131,5 @@ button:focus {
     outline: 0;    
     padding: 5px;
 }
+
 
