@@ -58,7 +58,16 @@
                 else {
                     $("#vtext").css("visibility", "visible");
                 }
-            });            
+            });
+            
+            $(document).on("click","#verify", function () {
+                if(document.getElementById('verify').checked) {
+                    $("#vtext").css("visibility", "hidden");
+                }
+                else {
+                    $("#vtext").css("visibility", "visible");
+                }
+            });              
             
             $("#newplayer").keyup(function(event) {
                 if (event.keyCode === 13) {
@@ -95,4 +104,3 @@
 
 </body>
 </html>
-
