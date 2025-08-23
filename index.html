@@ -52,10 +52,12 @@
 
             $(document).on("click",".refresh", function () {
                 if(document.getElementById('verify').checked) {
-                    $("#verify").prop("checked", false)
+                    $("#verify").prop("checked", false);
                     location.reload();
                 }
-                else alert("Check the box first!")
+                else {
+                    $("#vtext").css("visibility", "visible");
+                }
             });            
             
             $("#newplayer").keyup(function(event) {
@@ -86,7 +88,7 @@
 <div class="player-container">
 
 </div>
-<input type="checkbox" class="verify" id="verify">
+<span class="verify"><input type="checkbox" id="verify"><span id="vtext">check box before refreshing</span></span>
 <div class="refresh"></div>
 <input type = "hidden" id = "playercount" value="1">
 <div class = "bottom"><input name = "newplayer" id="newplayer" type="text" maxlength="5"> <button type="submit" name="addplayer" id="addplayer">Add Player</button></div>
